@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #817b7baf;
+
+    --fonte-primaria:"Krona One", sans-serif;
+    --fonte-secundaria:"Inter", serif;
+}
+
+*{/*aproximar os elementos para ficarem colados na página*/
+    margin: 0;
+    padding: 0;
+}
+
+
+body{/*Mudar o background e as cores do body*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    justify-content: center;
+}
+
+.cabecalho{/*header com os navs*/
+    padding: 2% 0% 2% 6%;
+    background-color: #272727;
+}
+
+.cabecalho_menu{/*Menu com os links*/
+    display: flex;
+    gap: 100px;/*Distância de um link pro outro*/
+}
+
+.cabecalho_menu_link{/*Os links do nav*/
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+.cabecalho_menu_link:hover{/*background do cabecalho usando o hover*/
+    background-color:var(--cor-hover)
+}
+/*Estilizando o texto*/
+.conteudo_formulario_titulo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+} 
+.conteudo_formulario_subtitulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+} 
+
+.formulario{/*alinhando o formulario*/
+    padding: 4% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Font family e margem entre um input e outro */
+.campo {
+    font-family: var(--fonte-primaria);
+    margin-bottom: 1em;
+}
+
+/* Distância do label */
+.campo label {
+    margin-bottom: 0.2em;
+    color: var(--cor-terciaria);
+    display: block;/*label ocupando a linha inteira*/
+}
+
+/* Estilizando os resultados do formulario*/
+#nome_resultado {
+    padding: 0.2em;
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);/*sombra ao redor do input*/
+    display: block;/*input ocupando a linha inteira*/
+    background: #E0E0F8;
+}
+
+#email_resultado {
+    padding: 0.2em;
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);/*sombra ao redor do input*/
+    display: block;/*input ocupando a linha inteira*/
+    background: #E0E0F8;
+}
+
+
+#mensagem_resultado {
+    padding: 0.2em;
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);/*sombra ao redor do input*/
+    display: block;/*input ocupando a linha inteira*/
+    background: #E0E0F8;
+}
+
+/*Responsividade*/
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .formulario{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .formulario_conteudo{
+        width: auto;
+        height: auto;
+    }
+}
