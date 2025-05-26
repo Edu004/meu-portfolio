@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #817b7baf;
+
+    --fonte-primaria:"Krona One", sans-serif;
+    --fonte-secundaria:"Inter", serif;
+}
+
+*{/*aproximar os elementos para ficarem colados na página*/
+    margin: 0;
+    padding: 0;
+}
+
+
+body{/*Mudar o background e as cores do body*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{/*header com os navs*/
+    padding: 2% 0% 2% 6%;
+    background-color: #272727;
+}
+
+.cabecalho_menu{/*Menu com os links*/
+    display: flex;
+    gap: 100px;/*Distância de um link pro outro*/
+}
+
+.cabecalho_menu_link{/*Os links do nav*/
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+/*Hover do cabeçalho*/
+.cabecalho_menu_link:hover{
+    background-color:var(--cor-hover)
+}
+
+
+.imagem{/*Foto com borda e altura definida*/
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Alinhamento e estilização do main*/
+.conteudo{
+    padding: 3% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+/*Alinhamento e estilização do section*/
+.conteudo_formacao{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 15px;  
+}
+
+.conteudo_titulo{
+    font-size: 2.25rem;
+    font-weight: 900;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+.conteudo_texto{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.conteudo_subtitulo{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+
+
+.rodape{
+    margin-top: 20px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}
+
+.rodape_texto{
+    padding: 10px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300 bold;
+}
+
+
+/*Responsividade*/
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .conteudo{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .conteudo_formacao{
+        width: auto;
+    }
+}

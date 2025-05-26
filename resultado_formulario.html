@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dados</title>
+  <link rel="stylesheet" href="./styles/resultado_formulario.css">
+  <link rel="shortcut icon" href="./assets/resume.png" type="image/x-icon">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho_menu">
+        <a class="cabecalho_menu_link" href="form_contato.html">Contato</a>
+    </nav>
+  </header>
+  <main class="formulario">
+    <section>
+        <div class="formulario_conteudo_titulo">
+            <h1 class="conteudo_formulario_titulo">Conteúdo do formulário atual</h1>
+            <br>
+        </div>
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <p id="nome_resultado"></p>
+          </div>    
+          
+          <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <p id="email_resultado"></p>
+          </div>
+          <div class="campo">
+            <br>
+            <label for="mensagem"><strong>Mensagem</strong></label>
+            <p id="mensagem_resultado"></p>
+          </div>
+    </section>
+  </main>
+  <script>
+      const nomeResultado = sessionStorage.getItem("nomeResultado");
+      const emailResultado = sessionStorage.getItem("emailResultado");
+      const mensagemResultado = sessionStorage.getItem("mensagemResultado");
+  
+      document.getElementById("nome_resultado").textContent = nomeResultado; // Define o texto do parágrafo
+      document.getElementById("email_resultado").textContent = emailResultado; // Define o texto do parágrafo
+      document.getElementById("mensagem_resultado").textContent = mensagemResultado; // Define o texto do parágrafo
+  </script>
+</body>
+</html>

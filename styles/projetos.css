@@ -1,0 +1,176 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #817b7baf;
+
+    --fonte-primaria:"Krona One", sans-serif;
+    --fonte-secundaria:"Inter", serif;
+}
+
+*{/*aproximar os elementos para ficarem colados na página*/
+    margin: 0;
+    padding: 0;
+}
+
+
+body{/*Mudar o background e as cores do body*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+
+.cabecalho{/*header com os navs*/
+    padding: 2% 0% 2% 6%;
+    background-color: #272727;
+}
+
+.cabecalho_menu{/*Menu com os links*/
+    display: flex;
+    gap: 100px;/*Distância de um link pro outro*/
+}
+
+.cabecalho_menu_link{/*Os links do nav*/
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+/*Estilização do hover do cabeçalho*/
+.cabecalho_menu_link:hover{
+    background-color:var(--cor-hover)
+}
+
+
+/*Estilização e alinhamento do main*/
+.conteudo{
+    padding: 3% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.conteudo_2{
+    padding: 4% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.conteudo_3{
+    padding: 1% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+/*Estilização e alinhamento das sections*/
+.conteudo_projetos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 30px;  
+}
+
+
+/*Estilização dos textos*/
+.conteudo_projetos_titulo{
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+.conteudo_projetos_subtitulo{
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+.conteudo_projetos_texto{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+}
+
+/*Estilizando as divs das imagens */
+.div_banco {
+    margin-bottom: 25px;/*Me guiando para que a foto fique perto do texto*/
+    width:400px; /* largura */
+    height:200px; /* altura */
+}
+.div_pandas{
+    margin-top: 20px;
+    width:400px; /* largura */
+    height:200px; /* altura */
+}
+.div_decodificador{
+    margin-top: 15px;
+    width:400px; /* largura */
+    height:200px; /* altura */
+}
+  
+.imagem{/*Imagem com borda e altura definida*/
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/*Estilização do rodapé*/
+.rodape{
+    margin-top: 60px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}
+
+.rodape_texto{
+    padding: 10px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300 bold;
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .conteudo{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .conteudo_2{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .conteudo_3{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .conteudo_projetos{
+        width: auto;
+    }
+}
