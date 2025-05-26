@@ -1,7 +1,7 @@
 
 <h1 align="center">Meu portfólio pessoal</h1>
 <h1 align="center">
-  <img alt="Foto de um banco como banner" src="./assets/logo_readme.PNG" />
+  <img alt="Banner da tela de início do portfólio" src="./assets/logo_readme.PNG" />
 </h1>
 
 <h2>Descrição do Projeto</h2>
