@@ -20,5 +20,5 @@ As seguinte ferramenta foi usada na construção do projeto:
 - [x] Projetos pessoais
 
 <h3 align="center"> 
-	🚧  Portfólio 🚀 Em andamento...  🚧
+	  Portfólio 🚀 Concluído!  
 </h3>
